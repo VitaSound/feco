@@ -1,70 +1,80 @@
-# feco — каталог экосистемы VitaSound Forth
+# feco — VitaSound Forth ecosystem catalog
 
-Экспериментальный набор инструментов и библиотек для Gforth, созданный с использованием ИИ. Цель — чтобы разработка на Forth соответствовала современным принципам: единый тулчейн (сборка, тесты, линт, покрытие), декларативные зависимости, воспроизводимые релизы и интеграция с IDE. В перспективе — применение ИИ-ассистентов непосредственно в цикле разработки на Forth: от написания кода до верификации через `fmix test`, `flint` и `fcov`.
+[Russian version](README.ru.md)
 
-Все репозитории — организация [VitaSound](https://github.com/VitaSound) на GitHub. Локально они обычно лежат рядом: `~/frules`, `~/fmix`, `~/flint`, …
+An experimental toolkit and library set for Gforth, built with AI assistance. The goal is modern Forth development: a unified toolchain (build, tests, lint, coverage), declarative dependencies, reproducible releases, and IDE integration. Long term — AI assistants in the Forth dev loop, from writing code to verification via `fmix test`, `flint`, and `fcov`.
 
-## Стек (кратко)
+All repositories live under [VitaSound](https://github.com/VitaSound) on GitHub. Locally they usually sit side by side: `~/frules`, `~/fmix`, `~/flint`, …
+
+![Forth and modern tooling — illustration for the fmix article](assets/programming-languages-personified.png)
+
+The article that started this stack — about [fmix](https://github.com/VitaSound/fmix):
+
+- [FMix: a package manager for Forth](https://dev.to/ua3mqj/fmix-a-package-manager-for-forth-37ld) (English)
+- [FMix: пакетный менеджер для Forth](https://dev.to/ua3mqj/fmix-pakietnyi-mieniedzhier-dlia-forth-o3p) (Russian)
+
+## Stack (overview)
 
 ```
-frules                                    ← правила Forth для ИИ-ассистентов
+frules                                    ← Forth rules for AI assistants
         │
-fsemver · ttester · fenum · f             ← общие библиотеки
+fsemver · ttester · fenum · f             ← shared libraries
         │
-fmix · flint · fcov · fmcp · fjson        ← инструментарий
+fmix · flint · fcov · fmcp · fjson        ← tooling
         │
-fhdlgen / fhdl                            ← прикладные генераторы HDL
+fhdlgen / fhdl                            ← HDL generators
 ```
 
-## Каталог библиотек и инструментов
+## Library and tool catalog
 
-| Проект | Назначение | Версия | Последнее обновление | Репозиторий |
-|--------|------------|--------|----------------------|-------------|
-| **fmix** | Сборка, пакетный менеджер и раннер тестов (`fmix new`, `packages.get`, `test`) | 0.7.2 | 2026-06-05 | [VitaSound/fmix](https://github.com/VitaSound/fmix) |
-| **flint** | Линтер: предупреждения о дублирующихся определениях слов в `.4th` | 0.2.2 | 2026-05-24 | [VitaSound/flint](https://github.com/VitaSound/flint) |
-| **fcov** | Сбор и отчёты по покрытию кода (console, JSON, LCOV, HTML) | 0.3.0 | 2026-05-24 | [VitaSound/fcov](https://github.com/VitaSound/fcov) |
-| **fmcp** | MCP stdio-мост: `fmix`, `flint`, `fcov` из Cursor и других MCP-клиентов | 0.1.0 | 2026-06-05 | [VitaSound/fmcp](https://github.com/VitaSound/fmcp) |
-| **fjson** | Минимальная запись JSON, read-lite и дерево узлов (MCP NDJSON, тулчейн) | 0.2.2 | 2026-06-05 | [VitaSound/fjson](https://github.com/VitaSound/fjson) |
-| **fhdlgen** | Генератор HDL на Gforth: IR «проект → модуль → порт», emit Verilog | 0.3.1 | 2026-05-24 | [VitaSound/fhdlgen](https://github.com/VitaSound/fhdlgen) |
-| **fsemver** | Парсер и матчер semver-требований (`~>`, `>=`, …) для `package.4th` | 0.1.1 | 2026-05-24 | [VitaSound/fsemver](https://github.com/VitaSound/fsemver) |
-| **ttester** | Тестовый фреймворк Hayes/Ertl + расширения VitaSound (`T{ }T`, `expect-*`) | 1.2.1 | 2026-05-24 | [VitaSound/ttester](https://github.com/VitaSound/ttester) |
-| **fenum** | Универсальные контейнеры (`ulist`, type-tag диспетчер в стиле Elixir Enum) | 0.1.1 | 2026-05-22 | [VitaSound/fenum](https://github.com/VitaSound/fenum) |
-| **f** | Менеджер пакетов [theForthNet](https://theforth.net); слой совместимости | 0.2.4 | 2025-07-03 | [VitaSound/f](https://github.com/VitaSound/f) |
-| **fhdl** | Ранний генератор Verilog из Forth-DSL (предшественник fhdlgen) | 0.1.0 | 2026-01-18 | [VitaSound/fhdl](https://github.com/VitaSound/fhdl) |
-| **frules** | Сжатые правила Forth для Cursor и других ИИ-ассистентов | 0.1.2 | 2026-06-03 | [VitaSound/frules](https://github.com/VitaSound/frules) |
+| Project | Purpose | Version | Last updated | Repository |
+|---------|---------|---------|--------------|------------|
+| **fmix** | Build tool, package manager, test runner (`fmix new`, `packages.get`, `test`) | 0.7.2 | 2026-06-05 | [VitaSound/fmix](https://github.com/VitaSound/fmix) |
+| **flint** | Linter: warns on duplicate word definitions in `.4th` | 0.2.2 | 2026-05-24 | [VitaSound/flint](https://github.com/VitaSound/flint) |
+| **fcov** | Code coverage collection and reports (console, JSON, LCOV, HTML) | 0.3.0 | 2026-05-24 | [VitaSound/fcov](https://github.com/VitaSound/fcov) |
+| **fmcp** | MCP stdio bridge: `fmix`, `flint`, `fcov` from Cursor and other MCP clients | 0.1.0 | 2026-06-05 | [VitaSound/fmcp](https://github.com/VitaSound/fmcp) |
+| **fjson** | Minimal JSON write, read-lite, and node tree (MCP NDJSON, toolchain) | 0.2.2 | 2026-06-05 | [VitaSound/fjson](https://github.com/VitaSound/fjson) |
+| **fhdlgen** | Gforth HDL generator: IR project → module → port, Verilog emit | 0.3.1 | 2026-05-24 | [VitaSound/fhdlgen](https://github.com/VitaSound/fhdlgen) |
+| **fsemver** | Semver requirement parser and matcher (`~>`, `>=`, …) for `package.4th` | 0.1.1 | 2026-05-24 | [VitaSound/fsemver](https://github.com/VitaSound/fsemver) |
+| **ttester** | Hayes/Ertl test framework + VitaSound extensions (`T{ }T`, `expect-*`) | 1.2.1 | 2026-05-24 | [VitaSound/ttester](https://github.com/VitaSound/ttester) |
+| **fenum** | Generic containers (`ulist`, Elixir Enum–style type-tag dispatch) | 0.1.1 | 2026-05-22 | [VitaSound/fenum](https://github.com/VitaSound/fenum) |
+| **f** | [theForthNet](https://theforth.net) package manager; compatibility layer | 0.2.4 | 2025-07-03 | [VitaSound/f](https://github.com/VitaSound/f) |
+| **fhdl** | Early Verilog generator from Forth DSL (fhdlgen predecessor) | 0.1.0 | 2026-01-18 | [VitaSound/fhdl](https://github.com/VitaSound/fhdl) |
+| **frules** | Compact Forth rules for Cursor and other AI assistants | 0.1.2 | 2026-06-03 | [VitaSound/frules](https://github.com/VitaSound/frules) |
 
-Версии — последний тег на GitHub, скрипт `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json). Инструкция для агента: [AGENTS.md](AGENTS.md).
+Versions are the latest Git tag on GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json). Agent instructions: [AGENTS.md](AGENTS.md).
 
-## Типичный рабочий цикл
+## Typical workflow
 
-**Новый проект:**
+**New project:**
 
 ```bash
-fmix new <имя>       # каркас: package.4th, tests/, .gitignore, …
-cd <имя>
-~/frules/install.sh . gforth   # правила Forth → .cursor/rules/
+fmix new <name>       # scaffold: package.4th, tests/, .gitignore, …
+cd <name>
+~/frules/install.sh . gforth   # Forth rules → .cursor/rules/
 fmix packages.get
 flint
 fmix test
-fcov run && fcov report   # опционально
+fcov run && fcov report   # optional
 ```
 
-**Существующий проект:**
+**Existing project:**
 
 ```bash
-cd <проект>
-~/frules/install.sh . gforth   # если ещё не подключены правила
-fmix packages.get    # зависимости из package.4th
-flint                # линт (опционально)
+cd <project>
+~/frules/install.sh . gforth   # if rules not installed yet
+fmix packages.get    # dependencies from package.4th
+flint                # lint (optional)
 fmix test            # *_test.4th
-fcov run && fcov report   # покрытие (опционально)
+fcov run && fcov report   # coverage (optional)
 ```
 
-**Cursor:** [frules](https://github.com/VitaSound/frules) — правила для ассистента при работе с `.4th` (симлинки в `.cursor/rules/`); [fmcp](https://github.com/VitaSound/fmcp) — MCP-сервер для `fmix` / `flint` / `fcov` из IDE. Подробнее: [frules/README.md](https://github.com/VitaSound/frules/blob/main/README.md), [fmcp/README.md](https://github.com/VitaSound/fmcp/blob/main/README.md).
+**Cursor:** [frules](https://github.com/VitaSound/frules) — assistant rules for `.4th` (symlinks in `.cursor/rules/`); [fmcp](https://github.com/VitaSound/fmcp) — MCP server for `fmix` / `flint` / `fcov` from the IDE. See [frules/README.md](https://github.com/VitaSound/frules/blob/main/README.md), [fmcp/README.md](https://github.com/VitaSound/fmcp/blob/main/README.md).
 
-## См. также
+## See also
 
-- [frules/README.md](https://github.com/VitaSound/frules/blob/main/README.md) — установка правил, диалекты (`gforth` / `ans`), профили (`full` / `core`)
-- [frules/AGENTS.md](https://github.com/VitaSound/frules/blob/main/AGENTS.md) — краткая сводка для агента
-- [fmix/AGENTS.md](https://github.com/VitaSound/fmix/blob/main/AGENTS.md) — контекст для ИИ по всему тулчейну
-- [fhdlgen/doc/ecosystem.md](https://github.com/VitaSound/fhdlgen/blob/main/doc/ecosystem.md) — подробный обзор стека, матрица совместимости, baseline покрытия
+- [FMix: a package manager for Forth](https://dev.to/ua3mqj/fmix-a-package-manager-for-forth-37ld) · [FMix: пакетный менеджер для Forth](https://dev.to/ua3mqj/fmix-pakietnyi-mieniedzhier-dlia-forth-o3p) — DEV articles
+- [frules/README.md](https://github.com/VitaSound/frules/blob/main/README.md) — installing rules, dialects (`gforth` / `ans`), profiles (`full` / `core`)
+- [frules/AGENTS.md](https://github.com/VitaSound/frules/blob/main/AGENTS.md) — short agent summary
+- [fmix/AGENTS.md](https://github.com/VitaSound/fmix/blob/main/AGENTS.md) — AI context for the whole toolchain
+- [fhdlgen/doc/ecosystem.md](https://github.com/VitaSound/fhdlgen/blob/main/doc/ecosystem.md) — detailed stack overview, compatibility matrix, coverage baseline

@@ -1,40 +1,43 @@
-# feco — инструкция для агента
+# feco — agent instructions
 
-Каталог экосистемы VitaSound Forth: `README.md` для людей, `data/tags.json` — версии с GitHub.
+[Russian version](AGENTS.ru.md)
 
-## Обновить каталог
+Catalog of the VitaSound Forth ecosystem: `README.md` for humans, `data/tags.json` for versions from GitHub.
+
+## Refresh the catalog
 
 ```bash
 cd /path/to/feco
 ./scripts/fetch-tags.sh
 ```
 
-Скрипт для каждого репо из `catalog/repos.list` делает `git ls-remote --tags` и берёт **последний semver-тег** (`sort -V | tail -1`, префикс `v` снимается).
+For each repo in `catalog/repos.list`, the script runs `git ls-remote --tags` and picks the **latest semver tag** (`sort -V | tail -1`, strips a leading `v`).
 
-Проверка:
+Verify:
 
 ```bash
 ./scripts/fetch-tags.sh --table
 jq '.repos.fmix.latest' data/tags.json
 ```
 
-## Править README.md
+## Update README
 
-1. Запустить `./scripts/fetch-tags.sh`.
-2. В таблице **Каталог библиотек и инструментов** для каждой строки:
-   - **Версия** ← `repos.<имя>.latest` из `data/tags.json` (если `null` — оставить `—`).
-   - **Последнее обновление** — дату скрипт не тянет; при необходимости взять из локального клона:  
-     `git -C ../<имя> log -1 --format=%cs $(git -C ../<имя> describe --tags --abbrev=0 2>/dev/null)`  
-     или оставить без изменений.
-3. В сноске под таблицей указать `data/tags.json` и поле `fetched_at`.
-4. Не менять тексты «Назначение» и ссылки без запроса пользователя.
+1. Run `./scripts/fetch-tags.sh`.
+2. In the **Library and tool catalog** table (`README.md` and `README.ru.md`), for each row:
+   - **Version** / **Версия** ← `repos.<name>.latest` from `data/tags.json` (if `null`, use `—`).
+   - **Last updated** / **Последнее обновление** — the script does not fetch dates; if needed, from a local clone:  
+     `git -C ../<name> log -1 --format=%cs $(git -C ../<name> describe --tags --abbrev=0 2>/dev/null)`  
+     or leave unchanged.
+3. In the footnote under the table, mention `data/tags.json` and `fetched_at`.
+4. Do not change **Purpose** / **Назначение** text or links unless the user asks.
+5. Keep `README.md` and `README.ru.md` in sync.
 
-## Новый репозиторий в экосистеме
+## Add a new ecosystem repo
 
-1. Имя в `catalog/repos.list`.
-2. Строка в таблице `README.md`.
-3. `./scripts/fetch-tags.sh` и обновить версию в таблице.
+1. Add the name to `catalog/repos.list`.
+2. Add a row to the tables in `README.md` and `README.ru.md`.
+3. Run `./scripts/fetch-tags.sh` and update the version column.
 
-## Зависимости
+## Dependencies
 
 `git`, `jq`.
