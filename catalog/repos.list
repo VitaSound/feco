@@ -1,0 +1,16 @@
+# VitaSound ecosystem repos tracked by feco.
+# One short name per line (matches GitHub repo name under VitaSound/).
+# Lines starting with # are ignored.
+
+frules
+fsemver
+ttester
+fenum
+f
+fmix
+flint
+fcov
+fmcp
+fjson
+fhdlgen
+fhdl

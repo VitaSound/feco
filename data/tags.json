@@ -1,0 +1,112 @@
+{
+  "fetched_at": "2026-06-04T23:36:00Z",
+  "org": "VitaSound",
+  "repos": {
+    "frules": {
+      "url": "https://github.com/VitaSound/frules",
+      "tags": [
+        "0.1.0",
+        "0.1.1"
+      ],
+      "latest": "0.1.1"
+    },
+    "fsemver": {
+      "url": "https://github.com/VitaSound/fsemver",
+      "tags": [
+        "0.1.0",
+        "0.1.1"
+      ],
+      "latest": "0.1.1"
+    },
+    "ttester": {
+      "url": "https://github.com/VitaSound/ttester",
+      "tags": [
+        "1.1.0",
+        "1.2.0",
+        "1.2.1"
+      ],
+      "latest": "1.2.1"
+    },
+    "fenum": {
+      "url": "https://github.com/VitaSound/fenum",
+      "tags": [
+        "0.1.0",
+        "0.1.1"
+      ],
+      "latest": "0.1.1"
+    },
+    "f": {
+      "url": "https://github.com/VitaSound/f",
+      "tags": [
+        "0.2.4"
+      ],
+      "latest": "0.2.4"
+    },
+    "fmix": {
+      "url": "https://github.com/VitaSound/fmix",
+      "tags": [
+        "0.1.0",
+        "0.2.0",
+        "0.3.0",
+        "0.3.1",
+        "0.3.2",
+        "0.3.3",
+        "0.3.4",
+        "0.4.0",
+        "0.4.1",
+        "0.4.2",
+        "0.4.3",
+        "0.4.4",
+        "0.5.0",
+        "0.5.1",
+        "0.6.0",
+        "0.7.1",
+        "0.7.2"
+      ],
+      "latest": "0.7.2"
+    },
+    "flint": {
+      "url": "https://github.com/VitaSound/flint",
+      "tags": [
+        "0.1.0",
+        "0.1.1",
+        "0.2.1",
+        "0.2.2"
+      ],
+      "latest": "0.2.2"
+    },
+    "fcov": {
+      "url": "https://github.com/VitaSound/fcov",
+      "tags": [
+        "0.1.0",
+        "0.3.0"
+      ],
+      "latest": "0.3.0"
+    },
+    "fmcp": {
+      "url": "https://github.com/VitaSound/fmcp",
+      "tags": [],
+      "latest": null
+    },
+    "fjson": {
+      "url": "https://github.com/VitaSound/fjson",
+      "tags": [
+        "0.1.0",
+        "0.2.0",
+        "0.2.1",
+        "0.2.2"
+      ],
+      "latest": "0.2.2"
+    },
+    "fhdlgen": {
+      "url": "https://github.com/VitaSound/fhdlgen",
+      "tags": [],
+      "latest": null
+    },
+    "fhdl": {
+      "url": "https://github.com/VitaSound/fhdl",
+      "tags": [],
+      "latest": null
+    }
+  }
+}
