@@ -6,24 +6,11 @@
 
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-CATALOG="$ROOT/catalog/repos.list"
-OUT="$ROOT/data/tags.json"
-ORG="${FECO_GITHUB_ORG:-VitaSound}"
+FECO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+# shellcheck source=lib/common.sh
+source "$FECO_ROOT/scripts/lib/common.sh"
 
-repo_tags() {
-  local repo=$1
-  git ls-remote --tags "https://github.com/${ORG}/${repo}.git" 2>/dev/null \
-    | grep -v '\^{}$' \
-    | awk -F/ '{print $NF}' \
-    | sed 's/^v//' \
-    | grep -E '^[0-9]' \
-    | sort -V
-}
-
-read_repos() {
-  grep -v '^[[:space:]]*#' "$CATALOG" | grep -v '^[[:space:]]*$'
-}
+OUT="$TAGS_JSON"
 
 build_json() {
   local fetched_at repo tags latest entries=()

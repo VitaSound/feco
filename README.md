@@ -4,7 +4,16 @@
 
 An experimental toolkit and library set for Gforth, built with AI assistance. The goal is modern Forth development: a unified toolchain (build, tests, lint, coverage), declarative dependencies, reproducible releases, and IDE integration. Long term — AI assistants in the Forth dev loop, from writing code to verification via `fmix test`, `flint`, and `fcov`.
 
-All repositories live under [VitaSound](https://github.com/VitaSound) on GitHub. Locally they usually sit side by side: `~/frules`, `~/fmix`, `~/flint`, …
+All repositories live under [VitaSound](https://github.com/VitaSound) on GitHub. Locally they sit **next to feco** in the same parent directory (`FECO_WORKSPACE`): e.g. `~/fmix` when feco is `~/feco`, or `/opt/vitasound/fmix` for an isolated workspace — see [docs/shell-setup.md](docs/shell-setup.md).
+
+**Install everything:**
+
+```bash
+cd /path/to/feco
+./scripts/clone-ecosystem.sh          # latest release tags (user mode)
+./scripts/clone-ecosystem.sh --dev    # main/master for development
+./scripts/update-ecosystem.sh         # refresh tags, clones, catalog, deps
+```
 
 ![Forth and modern tooling — illustration for the fmix article](assets/programming-languages-personified.png)
 
@@ -29,20 +38,20 @@ fhdlgen / fhdl                            ← HDL generators
 
 | Project | Purpose | Version | Last updated | Repository |
 |---------|---------|---------|--------------|------------|
-| **frules** | Compact Forth rules for Cursor and other AI assistants | 0.1.2 | 2026-06-03 | [VitaSound/frules](https://github.com/VitaSound/frules) |
+| **frules** | Compact Forth rules for Cursor and other AI assistants | 0.1.1 | 2026-05-27 | [VitaSound/frules](https://github.com/VitaSound/frules) |
 | **fsemver** | Semver requirement parser and matcher (`~>`, `>=`, …) for `package.4th` | 0.1.1 | 2026-05-24 | [VitaSound/fsemver](https://github.com/VitaSound/fsemver) |
 | **ttester** | Hayes/Ertl test framework + VitaSound extensions (`T{ }T`, `expect-*`) | 1.2.1 | 2026-05-24 | [VitaSound/ttester](https://github.com/VitaSound/ttester) |
 | **fenum** | Generic containers (`ulist`, Elixir Enum–style type-tag dispatch) | 0.1.1 | 2026-05-22 | [VitaSound/fenum](https://github.com/VitaSound/fenum) |
 | **f** | [theForthNet](https://theforth.net) package manager; compatibility layer | 0.2.4 | 2025-07-03 | [VitaSound/f](https://github.com/VitaSound/f) |
-| **fmix** | Build tool, package manager, test runner (`fmix new`, `packages.get`, `test`) | 0.7.2 | 2026-06-05 | [VitaSound/fmix](https://github.com/VitaSound/fmix) |
+| **fmix** | Build tool, package manager, test runner (`fmix new`, `packages.get`, `test`) | 0.7.2 | 2026-05-24 | [VitaSound/fmix](https://github.com/VitaSound/fmix) |
 | **flint** | Linter: warns on duplicate word definitions in `.4th` | 0.2.2 | 2026-05-24 | [VitaSound/flint](https://github.com/VitaSound/flint) |
 | **fcov** | Code coverage collection and reports (console, JSON, LCOV, HTML) | 0.3.0 | 2026-05-24 | [VitaSound/fcov](https://github.com/VitaSound/fcov) |
-| **fmcp** | MCP stdio bridge: `fmix`, `flint`, `fcov` from Cursor and other MCP clients | 0.1.0 | 2026-06-05 | [VitaSound/fmcp](https://github.com/VitaSound/fmcp) |
-| **fjson** | Minimal JSON write, read-lite, and node tree (MCP NDJSON, toolchain) | 0.2.2 | 2026-06-05 | [VitaSound/fjson](https://github.com/VitaSound/fjson) |
+| **fmcp** | MCP stdio bridge: `fmix`, `flint`, `fcov` from Cursor and other MCP clients | — | — | [VitaSound/fmcp](https://github.com/VitaSound/fmcp) |
+| **fjson** | Minimal JSON write, read-lite, and node tree (MCP NDJSON, toolchain) | 0.2.3 | 2026-06-05 | [VitaSound/fjson](https://github.com/VitaSound/fjson) |
 | **fhdlgen** | Gforth HDL generator: IR project → module → port, Verilog emit | 0.3.1 | 2026-05-24 | [VitaSound/fhdlgen](https://github.com/VitaSound/fhdlgen) |
-| **fhdl** | Early Verilog generator from Forth DSL (fhdlgen predecessor) | 0.1.0 | 2026-01-18 | [VitaSound/fhdl](https://github.com/VitaSound/fhdl) |
+| **fhdl** | Early Verilog generator from Forth DSL (fhdlgen predecessor) | — | — | [VitaSound/fhdl](https://github.com/VitaSound/fhdl) |
 
-Versions are the latest Git tag on GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json). Agent instructions: [AGENTS.md](AGENTS.md).
+Versions are the latest Git tag on GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-06-05T08:21:54Z). Scripts: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.md](docs/shell-setup.md). Agent instructions: [AGENTS.md](AGENTS.md).
 
 ## Typical workflow
 
