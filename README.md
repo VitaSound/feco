@@ -47,11 +47,11 @@ fhdlgen / fhdl                            ← HDL generators
 | **flint** | Linter: warns on duplicate word definitions in `.4th` | 0.2.2 | 2026-05-24 | [VitaSound/flint](https://github.com/VitaSound/flint) |
 | **fcov** | Code coverage collection and reports (console, JSON, LCOV, HTML) | 0.3.0 | 2026-05-24 | [VitaSound/fcov](https://github.com/VitaSound/fcov) |
 | **fmcp** | MCP stdio bridge: `fmix`, `flint`, `fcov` from Cursor and other MCP clients | — | — | [VitaSound/fmcp](https://github.com/VitaSound/fmcp) |
-| **fjson** | Minimal JSON write, read-lite, and node tree (MCP NDJSON, toolchain) | 0.2.3 | 2026-06-05 | [VitaSound/fjson](https://github.com/VitaSound/fjson) |
+| **fjson** | Minimal JSON write, read-lite, and node tree (MCP NDJSON, toolchain) | 0.2.4 | 2026-06-05 | [VitaSound/fjson](https://github.com/VitaSound/fjson) |
 | **fhdlgen** | Gforth HDL generator: IR project → module → port, Verilog emit | 0.3.1 | 2026-05-24 | [VitaSound/fhdlgen](https://github.com/VitaSound/fhdlgen) |
 | **fhdl** | Early Verilog generator from Forth DSL (fhdlgen predecessor) | — | — | [VitaSound/fhdl](https://github.com/VitaSound/fhdl) |
 
-Versions are the latest Git tag on GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-06-05T08:21:54Z). Scripts: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.md](docs/shell-setup.md). Agent instructions: [AGENTS.md](AGENTS.md).
+Versions are the latest Git tag on GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-06-05T15:06:12Z). Scripts: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.md](docs/shell-setup.md). Agent instructions: [AGENTS.md](AGENTS.md).
 
 ## Typical workflow
 

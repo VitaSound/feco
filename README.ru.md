@@ -47,11 +47,11 @@ fhdlgen / fhdl                            ← прикладные генера�
 | **flint** | Линтер: предупреждения о дублирующихся определениях слов в `.4th` | 0.2.2 | 2026-05-24 | [VitaSound/flint](https://github.com/VitaSound/flint) |
 | **fcov** | Сбор и отчёты по покрытию кода (console, JSON, LCOV, HTML) | 0.3.0 | 2026-05-24 | [VitaSound/fcov](https://github.com/VitaSound/fcov) |
 | **fmcp** | MCP stdio-мост: `fmix`, `flint`, `fcov` из Cursor и других MCP-клиентов | — | — | [VitaSound/fmcp](https://github.com/VitaSound/fmcp) |
-| **fjson** | Минимальная запись JSON, read-lite и дерево узлов (MCP NDJSON, тулчейн) | 0.2.3 | 2026-06-05 | [VitaSound/fjson](https://github.com/VitaSound/fjson) |
+| **fjson** | Минимальная запись JSON, read-lite и дерево узлов (MCP NDJSON, тулчейн) | 0.2.4 | 2026-06-05 | [VitaSound/fjson](https://github.com/VitaSound/fjson) |
 | **fhdlgen** | Генератор HDL на Gforth: IR «проект → модуль → порт», emit Verilog | 0.3.1 | 2026-05-24 | [VitaSound/fhdlgen](https://github.com/VitaSound/fhdlgen) |
 | **fhdl** | Ранний генератор Verilog из Forth-DSL (предшественник fhdlgen) | — | — | [VitaSound/fhdl](https://github.com/VitaSound/fhdl) |
 
-Версии — последний тег на GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-06-05T08:21:54Z). Скрипты: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.ru.md](docs/shell-setup.ru.md). Инструкция для агента: [AGENTS.ru.md](AGENTS.ru.md).
+Версии — последний тег на GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-06-05T15:06:12Z). Скрипты: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.ru.md](docs/shell-setup.ru.md). Инструкция для агента: [AGENTS.ru.md](AGENTS.ru.md).
 
 ## Типичный рабочий цикл
 

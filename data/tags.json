@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-05T08:21:54Z",
+  "fetched_at": "2026-06-05T15:06:12Z",
   "org": "VitaSound",
   "repos": {
     "frules": {
@@ -95,9 +95,10 @@
         "0.2.0",
         "0.2.1",
         "0.2.2",
-        "0.2.3"
+        "0.2.3",
+        "0.2.4"
       ],
-      "latest": "0.2.3"
+      "latest": "0.2.4"
     },
     "fhdlgen": {
       "url": "https://github.com/VitaSound/fhdlgen",
