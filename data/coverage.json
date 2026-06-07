@@ -1,0 +1,91 @@
+{
+  "fetched_at": "2026-06-07T22:07:51Z",
+  "org": "VitaSound",
+  "method": "fcov run fmix test → .fcov/coverage.json (definition coverage)",
+  "repos": {
+    "frules": {
+      "url": "https://github.com/VitaSound/frules",
+      "coverage_pct": 2,
+      "words_covered": 95,
+      "words_total": 3808,
+      "source": ".fcov/coverage.json"
+    },
+    "fsemver": {
+      "url": "https://github.com/VitaSound/fsemver",
+      "coverage_pct": 0,
+      "words_covered": 0,
+      "words_total": 12,
+      "source": ".fcov/coverage.json"
+    },
+    "ttester": {
+      "url": "https://github.com/VitaSound/ttester",
+      "coverage_pct": 29,
+      "words_covered": 22,
+      "words_total": 74,
+      "source": ".fcov/coverage.json"
+    },
+    "fenum": {
+      "url": "https://github.com/VitaSound/fenum",
+      "coverage_pct": 98,
+      "words_covered": 54,
+      "words_total": 55,
+      "source": ".fcov/coverage.json"
+    },
+    "f": {
+      "url": "https://github.com/VitaSound/f",
+      "coverage_pct": 8,
+      "words_covered": 8,
+      "words_total": 94,
+      "source": ".fcov/coverage.json"
+    },
+    "fmix": {
+      "url": "https://github.com/VitaSound/fmix",
+      "coverage_pct": 44,
+      "words_covered": 42,
+      "words_total": 94,
+      "source": ".fcov/coverage.json"
+    },
+    "flint": {
+      "url": "https://github.com/VitaSound/flint",
+      "coverage_pct": 22,
+      "words_covered": 13,
+      "words_total": 59,
+      "source": ".fcov/coverage.json"
+    },
+    "fcov": {
+      "url": "https://github.com/VitaSound/fcov",
+      "coverage_pct": 38,
+      "words_covered": 75,
+      "words_total": 197,
+      "source": ".fcov/coverage.json"
+    },
+    "fmcp": {
+      "url": "https://github.com/VitaSound/fmcp",
+      "coverage_pct": 0,
+      "words_covered": 0,
+      "words_total": 190,
+      "source": ".fcov/coverage.json"
+    },
+    "fjson": {
+      "url": "https://github.com/VitaSound/fjson",
+      "coverage_pct": 100,
+      "words_covered": 124,
+      "words_total": 124,
+      "source": ".fcov/coverage.json"
+    },
+    "fhdlgen": {
+      "url": "https://github.com/VitaSound/fhdlgen",
+      "coverage_pct": 90,
+      "words_covered": 161,
+      "words_total": 177,
+      "source": ".fcov/coverage.json"
+    },
+    "fhdl": {
+      "url": "https://github.com/VitaSound/fhdl",
+      "coverage_pct": 76,
+      "words_covered": 26,
+      "words_total": 34,
+      "source": ".fcov/coverage.json"
+    }
+  }
+}

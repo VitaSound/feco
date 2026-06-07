@@ -5,6 +5,7 @@
 
 CATALOG="${FECO_ROOT}/catalog/repos.list"
 TAGS_JSON="${FECO_ROOT}/data/tags.json"
+COVERAGE_JSON="${FECO_ROOT}/data/coverage.json"
 ORG="${FECO_GITHUB_ORG:-VitaSound}"
 GIT_SCHEME="${FECO_GIT_SCHEME:-ssh}"
 
@@ -310,4 +311,29 @@ repo_last_updated_date() {
   tag="$(git -C "$dir" describe --tags --abbrev=0 2>/dev/null || true)"
   [ -n "$tag" ] || return 0
   git -C "$dir" log -1 --format=%cs "$tag" 2>/dev/null || true
+}
+
+repo_coverage_json_path() {
+  local repo=$1
+  echo "$(feco_workspace)/$repo/.fcov/coverage.json"
+}
+
+# Integer percent from fcov summary, or empty when unavailable.
+repo_coverage_pct() {
+  local repo=$1
+  local file pct
+  file="$(repo_coverage_json_path "$repo")"
+  [ -f "$file" ] || return 0
+  pct="$(jq -r '.summary.coverage_pct // empty' "$file" 2>/dev/null || true)"
+  [ -n "$pct" ] || return 0
+  printf '%.0f' "$pct"
+}
+
+format_coverage_pct() {
+  local pct=$1
+  if [ -z "$pct" ] || [ "$pct" = "null" ]; then
+    echo "—"
+  else
+    echo "${pct}%"
+  fi
 }

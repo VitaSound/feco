@@ -53,6 +53,9 @@ fi
 echo "==> fetch-tags" >&2
 "$FECO_ROOT/scripts/fetch-tags.sh"
 
+echo "==> fetch-coverage" >&2
+"$FECO_ROOT/scripts/fetch-coverage.sh" || echo "[!] fetch-coverage skipped or partial (no local .fcov/ data)" >&2
+
 if [ "$NO_CLONES" = 0 ]; then
   echo "==> sync local clones" >&2
   while IFS= read -r repo; do

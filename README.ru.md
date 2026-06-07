@@ -36,22 +36,22 @@ fhdlgen / fhdl                            ← прикладные генера�
 
 ## Каталог библиотек и инструментов
 
-| Проект | Назначение | Версия | Последнее обновление | Репозиторий |
-|--------|------------|--------|----------------------|-------------|
-| **frules** | Сжатые правила Forth для Cursor и других ИИ-ассистентов | 0.1.1 | 2026-05-27 | [VitaSound/frules](https://github.com/VitaSound/frules) |
-| **fsemver** | Парсер и матчер semver-требований (`~>`, `>=`, …) для `package.4th` | 0.1.1 | 2026-05-24 | [VitaSound/fsemver](https://github.com/VitaSound/fsemver) |
-| **ttester** | Тестовый фреймворк Hayes/Ertl + расширения VitaSound (`T{ }T`, `expect-*`) | 1.2.1 | 2026-05-24 | [VitaSound/ttester](https://github.com/VitaSound/ttester) |
-| **fenum** | Универсальные контейнеры (`ulist`, type-tag диспетчер в стиле Elixir Enum) | 0.1.1 | 2026-05-22 | [VitaSound/fenum](https://github.com/VitaSound/fenum) |
-| **f** | Менеджер пакетов [theForthNet](https://theforth.net); слой совместимости | 0.2.4 | 2025-07-03 | [VitaSound/f](https://github.com/VitaSound/f) |
-| **fmix** | Сборка, пакетный менеджер и раннер тестов (`fmix new`, `packages.get`, `test`) | 0.7.2 | 2026-05-24 | [VitaSound/fmix](https://github.com/VitaSound/fmix) |
-| **flint** | Линтер: предупреждения о дублирующихся определениях слов в `.4th` | 0.2.2 | 2026-05-24 | [VitaSound/flint](https://github.com/VitaSound/flint) |
-| **fcov** | Сбор и отчёты по покрытию кода (console, JSON, LCOV, HTML) | 0.3.0 | 2026-05-24 | [VitaSound/fcov](https://github.com/VitaSound/fcov) |
-| **fmcp** | MCP stdio-мост: `fmix`, `flint`, `fcov` из Cursor и других MCP-клиентов | — | — | [VitaSound/fmcp](https://github.com/VitaSound/fmcp) |
-| **fjson** | Минимальная запись JSON, read-lite и дерево узлов (MCP NDJSON, тулчейн) | 0.2.4 | 2026-06-05 | [VitaSound/fjson](https://github.com/VitaSound/fjson) |
-| **fhdlgen** | Генератор HDL на Gforth: IR «проект → модуль → порт», emit Verilog | 0.3.1 | 2026-05-24 | [VitaSound/fhdlgen](https://github.com/VitaSound/fhdlgen) |
-| **fhdl** | Ранний генератор Verilog из Forth-DSL (предшественник fhdlgen) | — | — | [VitaSound/fhdl](https://github.com/VitaSound/fhdl) |
+| Проект | Назначение | Версия | Последнее обновление | % покрытия | Репозиторий |
+|--------|------------|--------|----------------------|------------|-------------|
+| **frules** | Сжатые правила Forth для Cursor и других ИИ-ассистентов | 0.1.1 | 2026-05-27 | 2% | [VitaSound/frules](https://github.com/VitaSound/frules) |
+| **fsemver** | Парсер и матчер semver-требований (`~>`, `>=`, …) для `package.4th` | 0.1.1 | 2026-05-24 | 0% | [VitaSound/fsemver](https://github.com/VitaSound/fsemver) |
+| **ttester** | Тестовый фреймворк Hayes/Ertl + расширения VitaSound (`T{ }T`, `expect-*`) | 1.2.1 | 2026-05-24 | 29% | [VitaSound/ttester](https://github.com/VitaSound/ttester) |
+| **fenum** | Универсальные контейнеры (`ulist`, type-tag диспетчер в стиле Elixir Enum) | 0.1.1 | 2026-05-22 | 98% | [VitaSound/fenum](https://github.com/VitaSound/fenum) |
+| **f** | Менеджер пакетов [theForthNet](https://theforth.net); слой совместимости | 0.2.4 | 2025-07-03 | 8% | [VitaSound/f](https://github.com/VitaSound/f) |
+| **fmix** | Сборка, пакетный менеджер и раннер тестов (`fmix new`, `packages.get`, `test`) | 0.7.2 | 2026-05-24 | 44% | [VitaSound/fmix](https://github.com/VitaSound/fmix) |
+| **flint** | Линтер: предупреждения о дублирующихся определениях слов в `.4th` | 0.2.2 | 2026-05-24 | 22% | [VitaSound/flint](https://github.com/VitaSound/flint) |
+| **fcov** | Сбор и отчёты по покрытию кода (console, JSON, LCOV, HTML) | 0.3.0 | 2026-05-24 | 38% | [VitaSound/fcov](https://github.com/VitaSound/fcov) |
+| **fmcp** | MCP stdio-мост: `fmix`, `flint`, `fcov` из Cursor и других MCP-клиентов | 0.1.11 | 2026-06-08 | 0% | [VitaSound/fmcp](https://github.com/VitaSound/fmcp) |
+| **fjson** | Минимальная запись JSON, read-lite и дерево узлов (MCP NDJSON, тулчейн) | 0.2.4 | 2026-06-05 | 100% | [VitaSound/fjson](https://github.com/VitaSound/fjson) |
+| **fhdlgen** | Генератор HDL на Gforth: IR «проект → модуль → порт», emit Verilog | 0.3.1 | 2026-05-24 | 90% | [VitaSound/fhdlgen](https://github.com/VitaSound/fhdlgen) |
+| **fhdl** | Ранний генератор Verilog из Forth-DSL (предшественник fhdlgen) | — | — | 76% | [VitaSound/fhdl](https://github.com/VitaSound/fhdl) |
 
-Версии — последний тег на GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-06-05T15:06:12Z). Скрипты: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.ru.md](docs/shell-setup.ru.md). Инструкция для агента: [AGENTS.ru.md](AGENTS.ru.md).
+Версии — последний тег на GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-06-07T22:06:54Z). Покрытие (definition coverage, `fcov run fmix test`): `./scripts/fetch-coverage.sh` → [data/coverage.json](data/coverage.json) (`fetched_at`: 2026-06-07T22:07:51Z). Скрипты: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.ru.md](docs/shell-setup.ru.md). Инструкция для агента: [AGENTS.ru.md](AGENTS.ru.md).
 
 ## Типичный рабочий цикл
 
