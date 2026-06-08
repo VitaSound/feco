@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-08T09:43:19Z",
+  "fetched_at": "2026-06-08T10:21:44Z",
   "org": "VitaSound",
   "repos": {
     "frules": {
@@ -63,9 +63,10 @@
         "0.6.0",
         "0.7.1",
         "0.7.2",
-        "0.7.3"
+        "0.7.3",
+        "0.8.0"
       ],
-      "latest": "0.7.3"
+      "latest": "0.8.0"
     },
     "flint": {
       "url": "https://github.com/VitaSound/flint",
@@ -74,18 +75,20 @@
         "0.1.1",
         "0.2.1",
         "0.2.2",
-        "0.2.3"
+        "0.2.3",
+        "0.3.0"
       ],
-      "latest": "0.2.3"
+      "latest": "0.3.0"
     },
     "fcov": {
       "url": "https://github.com/VitaSound/fcov",
       "tags": [
         "0.1.0",
         "0.3.0",
-        "0.3.1"
+        "0.3.1",
+        "0.3.2"
       ],
-      "latest": "0.3.1"
+      "latest": "0.3.2"
     },
     "fmcp": {
       "url": "https://github.com/VitaSound/fmcp",
@@ -105,9 +108,10 @@
         "0.1.12",
         "0.1.13",
         "0.1.14",
-        "0.1.15"
+        "0.1.15",
+        "0.2.0"
       ],
-      "latest": "0.1.15"
+      "latest": "0.2.0"
     },
     "fjson": {
       "url": "https://github.com/VitaSound/fjson",
