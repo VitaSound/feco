@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-08T06:59:39Z",
+  "fetched_at": "2026-06-08T09:34:13Z",
   "org": "VitaSound",
   "method": "fcov run fmix test → .fcov/coverage.json (definition coverage)",
   "repos": {
@@ -40,30 +40,30 @@
     },
     "fmix": {
       "url": "https://github.com/VitaSound/fmix",
-      "coverage_pct": 44,
-      "words_covered": 42,
-      "words_total": 94,
+      "coverage_pct": 75,
+      "words_covered": 73,
+      "words_total": 97,
       "source": ".fcov/coverage.json"
     },
     "flint": {
       "url": "https://github.com/VitaSound/flint",
-      "coverage_pct": 22,
-      "words_covered": 13,
-      "words_total": 59,
+      "coverage_pct": 87,
+      "words_covered": 57,
+      "words_total": 65,
       "source": ".fcov/coverage.json"
     },
     "fcov": {
       "url": "https://github.com/VitaSound/fcov",
-      "coverage_pct": 38,
-      "words_covered": 75,
-      "words_total": 197,
+      "coverage_pct": 81,
+      "words_covered": 193,
+      "words_total": 238,
       "source": ".fcov/coverage.json"
     },
     "fmcp": {
       "url": "https://github.com/VitaSound/fmcp",
-      "coverage_pct": 63,
-      "words_covered": 126,
-      "words_total": 200,
+      "coverage_pct": 71,
+      "words_covered": 150,
+      "words_total": 209,
       "source": ".fcov/coverage.json"
     },
     "fjson": {
