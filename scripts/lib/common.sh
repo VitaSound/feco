@@ -313,9 +313,25 @@ repo_last_updated_date() {
   git -C "$dir" log -1 --format=%cs "$tag" 2>/dev/null || true
 }
 
+repo_readme_path() {
+  local repo=$1
+  echo "$(feco_workspace)/$repo/README.md"
+}
+
 repo_coverage_json_path() {
   local repo=$1
   echo "$(feco_workspace)/$repo/.fcov/coverage.json"
+}
+
+# Integer percent from Cov shields.io badge in README.md, or empty.
+repo_readme_cov_pct() {
+  local repo=$1
+  local file pct
+  file="$(repo_readme_path "$repo")"
+  [ -f "$file" ] || return 0
+  pct="$(grep -oE 'badge/Cov-[0-9]+%25' "$file" 2>/dev/null | head -1 | sed 's/badge\/Cov-//;s/%25//' || true)"
+  [ -n "$pct" ] || return 0
+  printf '%.0f' "$pct"
 }
 
 # Integer percent from fcov summary, or empty when unavailable.
