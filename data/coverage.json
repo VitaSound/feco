@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-07T22:07:51Z",
+  "fetched_at": "2026-06-08T06:59:39Z",
   "org": "VitaSound",
   "method": "fcov run fmix test → .fcov/coverage.json (definition coverage)",
   "repos": {
@@ -12,8 +12,8 @@
     },
     "fsemver": {
       "url": "https://github.com/VitaSound/fsemver",
-      "coverage_pct": 0,
-      "words_covered": 0,
+      "coverage_pct": 100,
+      "words_covered": 12,
       "words_total": 12,
       "source": ".fcov/coverage.json"
     },
@@ -61,9 +61,9 @@
     },
     "fmcp": {
       "url": "https://github.com/VitaSound/fmcp",
-      "coverage_pct": 0,
-      "words_covered": 0,
-      "words_total": 190,
+      "coverage_pct": 63,
+      "words_covered": 126,
+      "words_total": 200,
       "source": ".fcov/coverage.json"
     },
     "fjson": {

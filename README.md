@@ -39,19 +39,19 @@ fhdlgen / fhdl                            ← HDL generators
 | Project | Purpose | Version | Last updated | % coverage | Repository |
 |---------|---------|---------|--------------|------------|------------|
 | **frules** | Compact Forth rules for Cursor and other AI assistants | 0.1.1 | 2026-05-27 | 2% | [VitaSound/frules](https://github.com/VitaSound/frules) |
-| **fsemver** | Semver requirement parser and matcher (`~>`, `>=`, …) for `package.4th` | 0.1.1 | 2026-05-24 | 0% | [VitaSound/fsemver](https://github.com/VitaSound/fsemver) |
+| **fsemver** | Semver requirement parser and matcher (`~>`, `>=`, …) for `package.4th` | 0.1.1 | 2026-05-24 | 100% | [VitaSound/fsemver](https://github.com/VitaSound/fsemver) |
 | **ttester** | Hayes/Ertl test framework + VitaSound extensions (`T{ }T`, `expect-*`) | 1.2.1 | 2026-05-24 | 29% | [VitaSound/ttester](https://github.com/VitaSound/ttester) |
 | **fenum** | Generic containers (`ulist`, Elixir Enum–style type-tag dispatch) | 0.1.1 | 2026-05-22 | 98% | [VitaSound/fenum](https://github.com/VitaSound/fenum) |
 | **f** | [theForthNet](https://theforth.net) package manager; compatibility layer | 0.2.4 | 2025-07-03 | 8% | [VitaSound/f](https://github.com/VitaSound/f) |
 | **fmix** | Build tool, package manager, test runner (`fmix new`, `packages.get`, `test`) | 0.7.2 | 2026-05-24 | 44% | [VitaSound/fmix](https://github.com/VitaSound/fmix) |
 | **flint** | Linter: warns on duplicate word definitions in `.4th` | 0.2.2 | 2026-05-24 | 22% | [VitaSound/flint](https://github.com/VitaSound/flint) |
 | **fcov** | Code coverage collection and reports (console, JSON, LCOV, HTML) | 0.3.0 | 2026-05-24 | 38% | [VitaSound/fcov](https://github.com/VitaSound/fcov) |
-| **fmcp** | MCP stdio bridge: `fmix`, `flint`, `fcov` from Cursor and other MCP clients | 0.1.11 | 2026-06-08 | 0% | [VitaSound/fmcp](https://github.com/VitaSound/fmcp) |
+| **fmcp** | MCP stdio bridge: `fmix`, `flint`, `fcov` from Cursor and other MCP clients | 0.1.13 | 2026-06-08 | 63% | [VitaSound/fmcp](https://github.com/VitaSound/fmcp) |
 | **fjson** | Minimal JSON write, read-lite, and node tree (MCP NDJSON, toolchain) | 0.2.4 | 2026-06-05 | 100% | [VitaSound/fjson](https://github.com/VitaSound/fjson) |
 | **fhdlgen** | Gforth HDL generator: IR project → module → port, Verilog emit | 0.3.1 | 2026-05-24 | 90% | [VitaSound/fhdlgen](https://github.com/VitaSound/fhdlgen) |
 | **fhdl** | Early Verilog generator from Forth DSL (fhdlgen predecessor) | — | — | 76% | [VitaSound/fhdl](https://github.com/VitaSound/fhdl) |
 
-Versions are the latest Git tag on GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-06-07T22:06:54Z). Coverage (definition coverage via `fcov run fmix test`): `./scripts/fetch-coverage.sh` → [data/coverage.json](data/coverage.json) (`fetched_at`: 2026-06-07T22:07:51Z). Scripts: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.md](docs/shell-setup.md). Agent instructions: [AGENTS.md](AGENTS.md).
+Versions are the latest Git tag on GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-06-08T06:58:14Z). Coverage (definition coverage via `fcov run fmix test`): `./scripts/fetch-coverage.sh` → [data/coverage.json](data/coverage.json) (`fetched_at`: 2026-06-08T06:59:39Z). Scripts: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.md](docs/shell-setup.md). Agent instructions: [AGENTS.md](AGENTS.md).
 
 ## Typical workflow
 
