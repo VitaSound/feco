@@ -53,6 +53,17 @@ fhdlgen / fhdl                            ← прикладные генера�
 
 Версии — последний тег на GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-07-31T11:49:49Z). Покрытие (definition coverage, `fcov run fmix test`): `./scripts/fetch-coverage.sh` → [data/coverage.json](data/coverage.json) (`fetched_at`: 2026-07-31T11:50:46Z). Скрипты: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.ru.md](docs/shell-setup.ru.md). Инструкция для агента: [AGENTS.ru.md](AGENTS.ru.md).
 
+## Связанные репозитории VitaSound
+
+Вне Forth-тулчейна, но часть того же проекта:
+
+| Репозиторий | Роль | Точка входа |
+|---|---|---|
+| [hdl-modules](https://github.com/VitaSound/hdl-modules) | Библиотека Verilog-модулей с Icarus-тестами, синтезаторы на Verilator и мост VST3 — практический потребитель того, что генерирует `fhdlgen` | [AI_INDEX.md](https://github.com/VitaSound/hdl-modules/blob/master/AI_INDEX.md) (ветка `master`, не `main`) |
+| [MIT](https://github.com/VitaSound/MIT) | Инженерная методология: декомпозиция задач, уровни аппаратно-программного стека, ADR, каталог готовых наработок | [docs/ai-start.md](https://github.com/VitaSound/MIT/blob/main/docs/ai-start.md) |
+
+Ни один из них не входит в `catalog/repos.list`: у них нет `package.4th`, а `scripts/update-ecosystem.sh` выполняет `fmix packages.get` в каждом клоне из этого списка.
+
 ## Типичный рабочий цикл
 
 **Новый проект:**

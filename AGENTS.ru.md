@@ -104,11 +104,14 @@ cd /path/to/feco
 2. Строка в таблицах `README.md` и `README.ru.md`.
 3. **`fetch_tags`**, затем `fetch-coverage.sh` + `update-readme-versions.sh`.
 
+В `catalog/repos.list` попадают только Forth-репозитории с `package.4th` — `scripts/update-ecosystem.sh` выполняет `fmix packages.get` в каждом клоне из списка. Связанные не-Forth репозитории ([hdl-modules](https://github.com/VitaSound/hdl-modules), [MIT](https://github.com/VitaSound/MIT)) живут в разделе «Связанные репозитории VitaSound» обоих README; в список, `data/tags.json` и `data/coverage.json` их не добавлять.
+
 ## Ветки по умолчанию
 
 | Репо | GitHub default |
 |------|----------------|
-| fmix, fhdl | `main` |
+| fhdl | `master` |
+| hdl-modules (связанный, не в `repos.list`) | `master` |
 | остальные | `main` |
 
 ## Зависимости

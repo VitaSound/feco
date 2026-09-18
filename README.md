@@ -53,6 +53,17 @@ fhdlgen / fhdl                            ← HDL generators
 
 Versions are the latest Git tag on GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-07-31T11:49:49Z). Coverage (definition coverage via `fcov run fmix test`): `./scripts/fetch-coverage.sh` → [data/coverage.json](data/coverage.json) (`fetched_at`: 2026-07-31T11:50:46Z). Scripts: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.md](docs/shell-setup.md). Agent instructions: [AGENTS.md](AGENTS.md).
 
+## Related VitaSound repositories
+
+Outside the Forth toolchain, but part of the same project:
+
+| Repository | Role | Entry point |
+|---|---|---|
+| [hdl-modules](https://github.com/VitaSound/hdl-modules) | Verilog module library with Icarus tests, Verilator synths and a VST3 bridge — the practical consumer of `fhdlgen` output | [AI_INDEX.md](https://github.com/VitaSound/hdl-modules/blob/master/AI_INDEX.md) (branch is `master`, not `main`) |
+| [MIT](https://github.com/VitaSound/MIT) | Engineering methodology: task decomposition, hardware/software stack levels, ADRs, catalog of existing assets | [docs/ai-start.md](https://github.com/VitaSound/MIT/blob/main/docs/ai-start.md) |
+
+Neither is listed in `catalog/repos.list`: they have no `package.4th`, and `scripts/update-ecosystem.sh` runs `fmix packages.get` in every clone from that list.
+
 ## Typical workflow
 
 **New project:**

@@ -120,11 +120,14 @@ Reads `badge/Cov-NN%` from `$FECO_WORKSPACE/<repo>/README.md`. Repos without a b
 2. Add a row to the tables in `README.md` and `README.ru.md`.
 3. **`fetch_tags`** (MCP) or `./scripts/fetch-tags.sh`, then `fetch-coverage.sh` + `update-readme-versions.sh`.
 
+Only Forth repos with a `package.4th` belong in `catalog/repos.list` — `scripts/update-ecosystem.sh` runs `fmix packages.get` in every clone from that list. Related non-Forth repos ([hdl-modules](https://github.com/VitaSound/hdl-modules), [MIT](https://github.com/VitaSound/MIT)) live in the "Related VitaSound repositories" section of both READMEs instead; keep them out of the list, `data/tags.json` and `data/coverage.json`.
+
 ## Default branches
 
 | Repo | GitHub default |
 |------|----------------|
-| fmix, fhdl | `main` |
+| fhdl | `master` |
+| hdl-modules (related, not in `repos.list`) | `master` |
 | others | `main` |
 
 Scripts detect via `git remote show` / `ls-remote --symref`.
