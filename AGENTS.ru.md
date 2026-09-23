@@ -4,6 +4,10 @@
 
 Каталог экосистемы VitaSound Forth: `README.ru.md` для людей, `data/tags.json` — версии с GitHub, `data/coverage.json` — definition coverage из **Cov-badge** в README локальных клонов.
 
+## Планирование изменений: OpenSpec
+
+Нетривиальные изменения планировать через [OpenSpec](https://github.com/Fission-AI/OpenSpec) в [openspec/](openspec/): `/opsx-explore` → `/opsx-propose <name>` → `/opsx-apply` → `/opsx-archive`. Контекст и правила — [openspec/config.yaml](openspec/config.yaml). Изменения конкретной библиотеки — в её собственном `openspec/`. Спеки пишутся только под текущее изменение.
+
 ## MCP (предпочтительно для агента)
 
 Использовать MCP-сервер **`vitasound-forth`** (Cursor: Settings → MCP). Имена инструментов ниже — **не** shell-команды (`fmix test`, `fcov run`, …).

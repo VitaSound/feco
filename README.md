@@ -91,6 +91,8 @@ fcov run && fcov report   # coverage (optional)
 
 **Cursor:** [frules](https://github.com/VitaSound/frules) — assistant rules for `.4th` (symlinks in `.cursor/rules/`); [fmcp](https://github.com/VitaSound/fmcp) — MCP server for `fmix` / `flint` / `fcov` from the IDE. See [frules/README.md](https://github.com/VitaSound/frules/blob/main/README.md), [fmcp/README.md](https://github.com/VitaSound/fmcp/blob/main/README.md).
 
+**Planning changes:** every ecosystem repo (and hdl-modules, MIT) has an [OpenSpec](https://github.com/Fission-AI/OpenSpec) `openspec/` folder. Plan non-trivial changes with `/opsx-explore` → `/opsx-propose <name>` → `/opsx-apply` → `/opsx-archive` in Cursor; install the CLI with `npm install -g @fission-ai/openspec` (Node ≥ 20.19).
+
 ## See also
 
 - [FMix: a package manager for Forth](https://dev.to/ua3mqj/fmix-a-package-manager-for-forth-37ld) · [FMix: пакетный менеджер для Forth](https://dev.to/ua3mqj/fmix-pakietnyi-mieniedzhier-dlia-forth-o3p) — DEV articles
