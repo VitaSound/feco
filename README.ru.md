@@ -48,12 +48,12 @@ fhdlgen / fhdl / fsoc                     ← генератор HDL + сбор�
 | **fcov** | Сбор и отчёты по покрытию кода (console, JSON, LCOV, HTML) | 0.3.2 | 2026-06-08 | 81% | [VitaSound/fcov](https://github.com/VitaSound/fcov) |
 | **fmcp** | MCP stdio-мост: `fmix`, `flint`, `fcov` из Cursor и других MCP-клиентов | 0.2.0 | 2026-06-08 | 71% | [VitaSound/fmcp](https://github.com/VitaSound/fmcp) |
 | **fjson** | Минимальная запись JSON, read-lite и дерево узлов (MCP NDJSON, тулчейн) | 0.2.5 | 2026-06-08 | 100% | [VitaSound/fjson](https://github.com/VitaSound/fjson) |
-| **flua** | Lua-подмножество → типичный Gforth (метапрограммирование для ИИ) | 0.1.0 | 2026-10-28 | — | [VitaSound/flua](https://github.com/VitaSound/flua) |
+| **flua** | Lua-подмножество → типичный Gforth (метапрограммирование для ИИ) | 0.1.0 | 2026-10-28 | 91% | [VitaSound/flua](https://github.com/VitaSound/flua) |
 | **fhdlgen** | Генератор HDL на Gforth: IR «проект → модуль → порт», emit Verilog | 0.4.1 | 2026-09-25 | 90% | [VitaSound/fhdlgen](https://github.com/VitaSound/fhdlgen) |
 | **fhdl** | Ранний генератор Verilog из Forth-DSL (предшественник fhdlgen) | — | — | 76% | [VitaSound/fhdl](https://github.com/VitaSound/fhdl) |
 | **fsoc** | Сборщик SoC на Forth: платы, Quartus/Icarus, CSR, прошивка J1 | 0.9.0 | 2026-09-30 | — | [VitaSound/fsoc](https://github.com/VitaSound/fsoc) |
 
-Версии — последний тег на GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-10-27T21:10:08Z). Покрытие (definition coverage, `fcov run fmix test`): `./scripts/fetch-coverage.sh` → [data/coverage.json](data/coverage.json) (`fetched_at`: 2026-10-27T21:10:59Z). Скрипты: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.ru.md](docs/shell-setup.ru.md). Инструкция для агента: [AGENTS.ru.md](AGENTS.ru.md).
+Версии — последний тег на GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-10-27T21:12:57Z). Покрытие (definition coverage, `fcov run fmix test`): `./scripts/fetch-coverage.sh` → [data/coverage.json](data/coverage.json) (`fetched_at`: 2026-10-27T21:13:46Z). Скрипты: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.ru.md](docs/shell-setup.ru.md). Инструкция для агента: [AGENTS.ru.md](AGENTS.ru.md).
 
 ## Связанные репозитории VitaSound
 
