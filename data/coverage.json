@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-31T11:50:46Z",
+  "fetched_at": "2026-10-27T21:10:59Z",
   "org": "VitaSound",
   "method": "Cov badge in README.md (shields.io)",
   "repos": {
@@ -78,7 +78,7 @@
       "coverage_pct": null,
       "words_covered": null,
       "words_total": null,
-      "source": null
+      "source": "readme-badge"
     },
     "fhdlgen": {
       "url": "https://github.com/VitaSound/fhdlgen",
@@ -90,6 +90,13 @@
     "fhdl": {
       "url": "https://github.com/VitaSound/fhdl",
       "coverage_pct": 76,
+      "words_covered": null,
+      "words_total": null,
+      "source": "readme-badge"
+    },
+    "fsoc": {
+      "url": "https://github.com/VitaSound/fsoc",
+      "coverage_pct": null,
       "words_covered": null,
       "words_total": null,
       "source": "readme-badge"
