@@ -73,6 +73,13 @@
       "words_total": null,
       "source": "readme-badge"
     },
+    "flua": {
+      "url": "https://github.com/VitaSound/flua",
+      "coverage_pct": null,
+      "words_covered": null,
+      "words_total": null,
+      "source": null
+    },
     "fhdlgen": {
       "url": "https://github.com/VitaSound/fhdlgen",
       "coverage_pct": 90,

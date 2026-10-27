@@ -12,5 +12,7 @@ flint
 fcov
 fmcp
 fjson
+flua
 fhdlgen
 fhdl
+fsoc

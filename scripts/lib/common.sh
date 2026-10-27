@@ -10,7 +10,7 @@ ORG="${FECO_GITHUB_ORG:-VitaSound}"
 GIT_SCHEME="${FECO_GIT_SCHEME:-ssh}"
 
 # CLI tools with bin/<name> launchers (order matters for bashrc output).
-FECO_CLI_TOOLS=(fmix flint fcov fmcp fhdlgen)
+FECO_CLI_TOOLS=(fmix flint fcov fmcp fhdlgen flua)
 
 need() {
   command -v "$1" >/dev/null 2>&1 || {

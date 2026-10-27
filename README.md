@@ -29,9 +29,9 @@ frules                                    ← Forth rules for AI assistants
         │
 fsemver · ttester · fenum · f             ← shared libraries
         │
-fmix · flint · fcov · fmcp · fjson        ← tooling
+fmix · flint · fcov · fmcp · fjson · flua ← tooling
         │
-fhdlgen / fhdl                            ← HDL generators
+fhdlgen / fhdl / fsoc                     ← HDL generator + SoC builder
 ```
 
 ## Library and tool catalog
@@ -48,8 +48,10 @@ fhdlgen / fhdl                            ← HDL generators
 | **fcov** | Code coverage collection and reports (console, JSON, LCOV, HTML) | 0.3.2 | 2026-06-08 | 81% | [VitaSound/fcov](https://github.com/VitaSound/fcov) |
 | **fmcp** | MCP stdio bridge: `fmix`, `flint`, `fcov` from Cursor and other MCP clients | 0.2.0 | 2026-06-08 | 71% | [VitaSound/fmcp](https://github.com/VitaSound/fmcp) |
 | **fjson** | Minimal JSON write, read-lite, and node tree (MCP NDJSON, toolchain) | 0.2.5 | 2026-06-08 | 100% | [VitaSound/fjson](https://github.com/VitaSound/fjson) |
+| **flua** | Lua subset → idiomatic Gforth (metaprogramming aid for AI) | 0.1.0 | 2026-10-27 | — | [VitaSound/flua](https://github.com/VitaSound/flua) |
 | **fhdlgen** | Gforth HDL generator: IR project → module → port, Verilog emit | 0.3.1 | 2026-05-24 | 90% | [VitaSound/fhdlgen](https://github.com/VitaSound/fhdlgen) |
 | **fhdl** | Early Verilog generator from Forth DSL (fhdlgen predecessor) | — | — | 76% | [VitaSound/fhdl](https://github.com/VitaSound/fhdl) |
+| **fsoc** | Forth-native SoC builder: boards, Quartus/Icarus, CSR, J1 firmware | 0.1.0 | 2026-09-23 | — | [VitaSound/fsoc](https://github.com/VitaSound/fsoc) |
 
 Versions are the latest Git tag on GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-07-31T11:49:49Z). Coverage (definition coverage via `fcov run fmix test`): `./scripts/fetch-coverage.sh` → [data/coverage.json](data/coverage.json) (`fetched_at`: 2026-07-31T11:50:46Z). Scripts: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.md](docs/shell-setup.md). Agent instructions: [AGENTS.md](AGENTS.md).
 

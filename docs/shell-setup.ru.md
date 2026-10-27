@@ -18,6 +18,8 @@ export PATH="$FMIX_HOME/bin:$PATH"
 | fcov | `FCOV_HOME` | `fcov version` |
 | fmcp | `FMCP_HOME` | `fmcp version` |
 | fhdlgen | `FHDLGEN_HOME` | `fhdlgen version` |
+| fsoc | `FSOC_HOME` | `fsoc version` |
+| flua | `FLUA_HOME` | `flua version` |
 
 Библиотеки (**без** bashrc): frules, fsemver, ttester, fenum, f, fjson, fhdl.
 
