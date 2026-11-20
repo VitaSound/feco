@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-27T21:12:57Z",
+  "fetched_at": "2026-11-20T22:11:48Z",
   "org": "VitaSound",
   "repos": {
     "frules": {
@@ -131,9 +131,10 @@
     "flua": {
       "url": "https://github.com/VitaSound/flua",
       "tags": [
-        "0.1.0"
+        "0.1.0",
+        "0.1.1"
       ],
-      "latest": "0.1.0"
+      "latest": "0.1.1"
     },
     "fhdlgen": {
       "url": "https://github.com/VitaSound/fhdlgen",

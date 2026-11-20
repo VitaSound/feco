@@ -43,17 +43,17 @@ fhdlgen / fhdl / fsoc                     ← генератор HDL + сбор�
 | **ttester** | Тестовый фреймворк Hayes/Ertl + расширения VitaSound (`T{ }T`, `expect-*`) | 1.2.1 | 2026-05-24 | 29% | [VitaSound/ttester](https://github.com/VitaSound/ttester) |
 | **fenum** | Универсальные контейнеры (`ulist`, type-tag диспетчер в стиле Elixir Enum) | 0.1.3 | 2026-10-23 | 98% | [VitaSound/fenum](https://github.com/VitaSound/fenum) |
 | **f** | Менеджер пакетов [theForthNet](https://theforth.net); слой совместимости | 0.2.4 | 2025-07-03 | 8% | [VitaSound/f](https://github.com/VitaSound/f) |
-| **fmix** | Сборка, пакетный менеджер и раннер тестов (`fmix new`, `packages.get`, `test`) | 0.9.0 | 2026-10-22 | 75% | [VitaSound/fmix](https://github.com/VitaSound/fmix) |
+| **fmix** | Сборка, пакетный менеджер и раннер тестов (`fmix new`, `packages.get`, `test`) | 0.9.0 | 2026-10-22 | 62% | [VitaSound/fmix](https://github.com/VitaSound/fmix) |
 | **flint** | Линтер: предупреждения о дублирующихся определениях слов в `.4th` | 0.3.0 | 2026-06-08 | 87% | [VitaSound/flint](https://github.com/VitaSound/flint) |
 | **fcov** | Сбор и отчёты по покрытию кода (console, JSON, LCOV, HTML) | 0.3.2 | 2026-06-08 | 81% | [VitaSound/fcov](https://github.com/VitaSound/fcov) |
 | **fmcp** | MCP stdio-мост: `fmix`, `flint`, `fcov` из Cursor и других MCP-клиентов | 0.2.0 | 2026-06-08 | 71% | [VitaSound/fmcp](https://github.com/VitaSound/fmcp) |
 | **fjson** | Минимальная запись JSON, read-lite и дерево узлов (MCP NDJSON, тулчейн) | 0.2.5 | 2026-06-08 | 100% | [VitaSound/fjson](https://github.com/VitaSound/fjson) |
-| **flua** | Lua-подмножество → типичный Gforth (метапрограммирование для ИИ) | 0.1.0 | 2026-10-28 | 91% | [VitaSound/flua](https://github.com/VitaSound/flua) |
+| **flua** | Lua-подмножество → типичный Gforth (метапрограммирование для ИИ) | 0.1.1 | 2026-11-15 | 93% | [VitaSound/flua](https://github.com/VitaSound/flua) |
 | **fhdlgen** | Генератор HDL на Gforth: IR «проект → модуль → порт», emit Verilog | 0.4.1 | 2026-09-25 | 90% | [VitaSound/fhdlgen](https://github.com/VitaSound/fhdlgen) |
 | **fhdl** | Ранний генератор Verilog из Forth-DSL (предшественник fhdlgen) | — | — | 76% | [VitaSound/fhdl](https://github.com/VitaSound/fhdl) |
 | **fsoc** | Сборщик SoC на Forth: платы, Quartus/Icarus, CSR, прошивка J1 | 0.9.0 | 2026-09-30 | — | [VitaSound/fsoc](https://github.com/VitaSound/fsoc) |
 
-Версии — последний тег на GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-10-27T21:12:57Z). Покрытие (definition coverage, `fcov run fmix test`): `./scripts/fetch-coverage.sh` → [data/coverage.json](data/coverage.json) (`fetched_at`: 2026-10-27T21:13:46Z). Скрипты: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.ru.md](docs/shell-setup.ru.md). Инструкция для агента: [AGENTS.ru.md](AGENTS.ru.md).
+Версии — последний тег на GitHub: `./scripts/fetch-tags.sh` → [data/tags.json](data/tags.json) (`fetched_at`: 2026-11-20T22:11:48Z). Покрытие (definition coverage, `fcov run fmix test`): `./scripts/fetch-coverage.sh` → [data/coverage.json](data/coverage.json) (`fetched_at`: 2026-11-20T22:12:42Z). Скрипты: `./scripts/clone-ecosystem.sh`, `./scripts/update-ecosystem.sh`. Shell: [docs/shell-setup.ru.md](docs/shell-setup.ru.md). Инструкция для агента: [AGENTS.ru.md](AGENTS.ru.md).
 
 ## Связанные репозитории VitaSound
 
