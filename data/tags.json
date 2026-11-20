@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-20T22:11:48Z",
+  "fetched_at": "2026-11-20T22:31:29Z",
   "org": "VitaSound",
   "repos": {
     "frules": {
@@ -66,9 +66,10 @@
         "0.7.2",
         "0.7.3",
         "0.8.0",
-        "0.9.0"
+        "0.9.0",
+        "0.10.0"
       ],
-      "latest": "0.9.0"
+      "latest": "0.10.0"
     },
     "flint": {
       "url": "https://github.com/VitaSound/flint",
@@ -78,9 +79,10 @@
         "0.2.1",
         "0.2.2",
         "0.2.3",
-        "0.3.0"
+        "0.3.0",
+        "0.3.2"
       ],
-      "latest": "0.3.0"
+      "latest": "0.3.2"
     },
     "fcov": {
       "url": "https://github.com/VitaSound/fcov",
@@ -88,9 +90,10 @@
         "0.1.0",
         "0.3.0",
         "0.3.1",
-        "0.3.2"
+        "0.3.2",
+        "0.3.3"
       ],
-      "latest": "0.3.2"
+      "latest": "0.3.3"
     },
     "fmcp": {
       "url": "https://github.com/VitaSound/fmcp",
@@ -111,9 +114,10 @@
         "0.1.13",
         "0.1.14",
         "0.1.15",
-        "0.2.0"
+        "0.2.0",
+        "0.2.1"
       ],
-      "latest": "0.2.0"
+      "latest": "0.2.1"
     },
     "fjson": {
       "url": "https://github.com/VitaSound/fjson",
@@ -132,9 +136,10 @@
       "url": "https://github.com/VitaSound/flua",
       "tags": [
         "0.1.0",
-        "0.1.1"
+        "0.1.1",
+        "0.1.2"
       ],
-      "latest": "0.1.1"
+      "latest": "0.1.2"
     },
     "fhdlgen": {
       "url": "https://github.com/VitaSound/fhdlgen",
@@ -143,14 +148,17 @@
         "0.2.1",
         "0.3.0",
         "0.3.1",
-        "0.4.1"
+        "0.4.1",
+        "0.5.1"
       ],
-      "latest": "0.4.1"
+      "latest": "0.5.1"
     },
     "fhdl": {
       "url": "https://github.com/VitaSound/fhdl",
-      "tags": [],
-      "latest": null
+      "tags": [
+        "0.1.1"
+      ],
+      "latest": "0.1.1"
     },
     "fsoc": {
       "url": "https://github.com/VitaSound/fsoc",
